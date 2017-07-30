@@ -1,0 +1,54 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+#articles{
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
+  font-size: 17px;
+  font-family: 'Rubik', sans-serif;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+h2{
+  font-size: 10px;
+  font-family: 'Helvetica', sans-serif;
+}
+
+#article{
+  margin: 15px;
+  border-radius: 4px;
+  max-width: 40ch;
+  text-align: center;
+  background: #EEEEEE;
+
+}
+
+#article-photo{
+  max-width: 40ch;
+  overflow: hidden;
+}
+
+#nav{
+  background-color: #ff614e;
+  width: 100%;
+  height: 40px;
+}
+
+#title{
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 28px;
+  font-family: 'Rubik', sans-serif;
+}
+
