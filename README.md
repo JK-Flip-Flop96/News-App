@@ -1,3 +1,2 @@
-# Steam-Library-App
-
-784611CFD37EB6A654286A2536412E62
+# News-Thing
+A Web App that colates a variety of tech news sources from the News Api
