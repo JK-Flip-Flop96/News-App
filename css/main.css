@@ -28,10 +28,10 @@ h2{
 }
 
 #article{
-    margin: 15px;
+    margin: 5px;
     border-radius: 4px;
-    max-width: 40ch;
-    width: 40ch;
+    max-width: 36ch;
+    width: 36ch;
     max-height: 272px;
     height: 272px;
     text-align: center;
