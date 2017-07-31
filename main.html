@@ -10,7 +10,6 @@
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/main.js"></script>
 
-
 	</head>
 
 	<body>
@@ -18,6 +17,23 @@
 		<div id="nav">
 			<div id="title"><b>News Thing</b></div>
 		</div>
+
+		<div id = 'filter'>
+			<p id="filter-header">Filters</p>
+            <form id="sort-buttons">
+                Sort:<br>
+                <input type="radio" name="sort" value="Top" checked>Top<br>
+                <input type="radio" name="sort" value="Latest">Latest<br>
+            </form>
+            <br>
+            <form id="source-buttons">
+                Sources:<br>
+                <section id="source-list">
+                </section>
+            </form>
+		</div>
+
+
 		<div class="main">
 
 			<section id="articles">
