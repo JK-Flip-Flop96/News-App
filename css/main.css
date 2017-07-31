@@ -32,7 +32,7 @@ h2{
     border-radius: 4px;
     max-width: 36ch;
     width: 36ch;
-    max-height: 272px;
+    max-height: 275px;
     height: 272px;
     text-align: center;
     background: #EEEEEE;
@@ -49,6 +49,7 @@ h2{
 
 #article-headline{
     margin-top: 0;
+    top: 225px;
 }
 
 #title{
