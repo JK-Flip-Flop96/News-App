@@ -71,9 +71,15 @@ let getSources = function (state) {
                 // api called using the appropriate source and sort
                 $.getJSON("https://newsapi.org/v1/articles?source=" + sourcesList[i] + "&sortBy=" + sort + "&apiKey=3b3c91de05994045b2b4ab15df772f7e", function (json) {
 
+                    // determines the number of articles that should be displayed
+                    let noArticles = $('select[id=no-articles-drop-down]').val();
+                    if(json.articles.length <= noArticles){
+                        noArticles = json.articles.length;
+                    }
+
                     //construction of the html to display the article
                     let output = '<a href="' + sourceURLs[i] + '" <div id="source-divider">' + sourceNames[i] + '</div></a>';
-                    for (let i = 0; i < (json.articles).length; i++) {
+                    for (let i = 0; i < noArticles; i++) {
                         output += '<a href="' + json.articles[i].url + '">';
                         output += '<div id="article">';
                         output += '<img id = "article-photo" src=' + json.articles[i].urlToImage + '>';
