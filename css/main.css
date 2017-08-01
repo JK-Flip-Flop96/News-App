@@ -3,6 +3,12 @@ html, body{
     padding: 0;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* for article area */
 #articles{
     display: flex;
     flex-flow: row wrap;
@@ -14,20 +20,22 @@ html, body{
     font-family: 'Rubik', sans-serif;
     position: absolute;
     top: 60px;
-    left: 160px;
+    left: 170px;
 }
 
-a{
-    color: black;
-    text-decoration: none;
+/* for banners separating each source's headlines*/
+#source-divider{
+    width: 100%;
+    background-color: #EEEEEE;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 22px;
 }
 
-h2{
-    font-size: 10px;
-    font-family: 'Helvetica', sans-serif;
-}
-
-#article{
+/* for each individual article */
+.article{
     margin: 5px;
     border-radius: 4px;
     max-width: 36ch;
@@ -39,6 +47,7 @@ h2{
     overflow: hidden;
 }
 
+/* for each individual article's photo*/
 #article-photo{
     height: auto;
     width: auto;
@@ -47,11 +56,20 @@ h2{
     margin: 0;
 }
 
+/* for positioning the headline text. Does not work*/
 #article-headline{
     margin-top: 0;
     top: 225px;
 }
 
+/* for title bar*/
+#nav{
+    background-color: #ff614e;
+    width: 100%;
+    height: 40px;
+}
+
+/* for text in title bar*/
 #title{
     color: white;
     text-align: center;
@@ -60,25 +78,21 @@ h2{
     font-family: 'Rubik', sans-serif;
 }
 
+/* for sidebar*/
 #filter{
     position: absolute;
     left: 0;
     top: 40px;
     background-color: #EEEEEE;
     height: auto;
-    width: 160px;
+    width: 170px;
     text-align: center;
     font-family: 'Rubik', sans-serif;
     border-bottom-right-radius: 4px;
     z-index: -1;
 }
 
-#nav{
-    background-color: #ff614e;
-    width: 100%;
-    height: 40px;
-}
-
+/* for all contents of the sidebar*/
 #sort-buttons{
     text-align: left;
     margin: 10px;
@@ -89,14 +103,12 @@ h2{
     margin: 10px;
 }
 
-#source-divider{
-    width: 100%;
-    background-color: #EEEEEE;
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-radius: 4px;
-    font-size: 22px;
+#no-articles-menu{
+    text-align: left;
+    margin: 10px;
 }
+
+
+
 
 

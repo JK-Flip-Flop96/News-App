@@ -81,13 +81,14 @@ let getSources = function (state) {
                     let output = '<a href="' + sourceURLs[i] + '" <div id="source-divider">' + sourceNames[i] + '</div></a>';
                     for (let i = 0; i < noArticles; i++) {
                         output += '<a href="' + json.articles[i].url + '">';
-                        output += '<div id="article">';
+                        output += '<div class="article">';
                         output += '<img id = "article-photo" src=' + json.articles[i].urlToImage + '>';
                         output += '<p id="article-headline">' + json.articles[i].title + '</p>';
                         output += '</div></a>';
                     }
 
                     $('#articles').append(output)
+
                 });
             }
 
@@ -135,7 +136,17 @@ $(function () {
     $('select[id=no-articles-drop-down]').change(function () {
         getSources($('input[name=sort]:checked').val());
     });
+
+    setInterval(function(){
+        if($(".article:hover").length > 0) {
+            $(".article").css('background-color', '#EEEEEE');
+            $(".article:hover").css('background-color', '#F5F5F5');
+        }
+        else {
+            $(".article").css('background-color', '#EEEEEE');
+        }
+
+    }, 10);
+
 });
-
-
 
